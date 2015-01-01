@@ -16,7 +16,7 @@ $cols = array(
 $from = 'users';
 $where = 'active = 1';
 
-$hash = new \Aura\Auth\Verifier\PasswordVerifier(PASSWORD_BCRYPT);
+$hash = new \Aura\Auth\Verifier\PasswordVerifier(PASSWORD_DEFAULT);
 
 $pdo_adapter = $auth_factory->newPdoAdapter($pdo, $hash, $cols, $from, $where);
 $login_service = $auth_factory->newLoginService($pdo_adapter);
