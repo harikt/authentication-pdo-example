@@ -2,16 +2,18 @@ Example for the article over http://securepasswords.info/aura-for-php/
 
 ## Installation
 
-```
+```bash
 git clone https://github.com/harikt/authentication-pdo-example
 cd authentication-pdo-example
 composer install
 cp .env_dist .env
 ```
 
+> Hope you know about [composer](https://getcomposer.org)
+
 Edit `.env` and make the necessary changes for `databasename`, `username`, `password`, `host` etc.
 
-```
+```php
 DB_DSN=mysql:dbname=databasename;host=127.0.0.1
 DB_USERNAME=username
 DB_PASSWORD=password
@@ -36,3 +38,5 @@ INSERT INTO `users` (`id`, `username`, `email`, `password`, `fullname`, `website
 ```
 
 Try pointing your browser to `login.php`, `next.php`, `logout.php` .
+
+Username / Password : harikt/123456 , pmjones/123456
