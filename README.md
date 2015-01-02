@@ -1,1 +1,1 @@
-Example for the article over https://securepasswords.info/
+Example for the article over http://securepasswords.info/aura-for-php/
